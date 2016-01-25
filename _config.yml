@@ -1,0 +1,10 @@
+# Site settings
+title: DENSEanalysis
+email:
+tagline: 2D Cine DENSE Post-Processing Software
+description: 2D Cine DENSE Post-Processing Software
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://denseanalysis.github.io" # the base hostname & protocol for your site
+exclude: [README.md]
+# Build settings
+markdown: kramdown
