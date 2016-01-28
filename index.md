@@ -3,63 +3,105 @@ layout: default
 title: Home
 ---
 
-## Introduction
+## DENSEanalysis: Cine DENSE Processing Software ##
 
-Welcome to the DENSEanalysis developer group. This group is dedicated to
-developing software to analyze DENSE MRI images. The software is currently
-developed on MATLAB and will allow the user to
+This software was developed in MATLAB to provide a user-friendly way of
+processing **d**isplacement **en**coding with **s**timulated **e**choes (DENSE)
+image data. Currently, the software supports analysis of 2D cine DENSE images;
+however, a beta version will be released in the coming months that supports
+full biventricular 3D analysis.
 
-* Easily navigate DICOM and DENSE images and cine sequences
-* Define regions of interest for DENSE analysis
-* View and export all sorts of DENSE derived physiological information.
-* View and access multi-slice data for the left- and right- ventricular motion. 
+### Getting Started
 
+#### System Requirements
 
-## Getting Started
+The current stable version (0.4.0) of *DENSEanalysis* requires:
 
-### System Requirements
-
-In order to run properly, *DENSEanalysis* requires:
-
-* MATLAB (R2013a and newer)
+* MATLAB (R2009b through R2014a)
 * MATLAB Image Processing Toolbox
-* MATLAB Curve Fitting Toolbox
-* MATLAB C-compiler
+* MATLAB Curve Fitting Toolbox (Spline Toolbox in later versions)
+* MATLAB C-Compiler
 
-### Prior to Installation
+#### Configuration of Mex Compiler
 
-* If haven't compiled a mex-file in MATLAB before, run mex-setup in the MATLAB
-command window to select a compiler on your machine.
-* If you have a previous installation of *DENSEanalysis*, make sure to remove any existing
-search paths point to that insallation and restart MATALB (from the MATLAB File Menu, Choose
-Set Path and remove folders referring to the previous installation).
+If you have never compiled a MATLAB mex file on your current machine, you will
+want to configure the MATLAB environment to be able to perform the compilation.
+To do this you'll want to run
 
-### Installation
+    mex -setup
 
-1. Download the zip file of the updated development version from [Github]("https://github.com/denseanalysis/denseanalysis/archive/master.zip").
-and unzip it into your install directory.
-2. Open MATLAB and navigate to the DENSEanalysis folder.
-3. Run the `DENSEsetup` command in MATLAB.
+This will lead you through a series of steps where MATLAB will detect all
+compilers installed on your machine and ask you to select the appropriate
+installer.
 
-### Startup
+#### Removal of Previous Installations
 
-1. Open MATLAB and navigate to the DENSEanalysis folder.
-2. Run DENSEms from the MATLAB command prompt.
+If you have previously installed *DENSEanalysis*, make sure to remove any
+existing entries in your path that point to that installation of
+*DENSEanalysis* and restart MATLAB
 
-## What to Cite
+To do this, you will want to select **Set Path** from the **File** menu. This
+will bring up the path dialog in which you can select the folders to remove.
 
-## Additional Documention
+#### Download Software
 
-During the transition to the new documentation format, the old documention is still available:
+The latest stable release of *DENSEanalysis* can be downloaded
+[here](https://github.com/denseanalysis/denseanalysis/releases/latest) either
+as a .zip or .tar.gz archive.
+
+> If you wish to use a bleeding-edge version of DENSEanalysis or you
+wish to contribute to DENSEanalysis, you can go to the DENSEanalysis [Github
+page](https://github.com/denseanalysis/denseanalysis) and download the source
+as needed.
+
+Once downloaded, you'll want to extract the contents of the archive to a
+directory of your choice on your machine.
+
+Launch MATLAB and change folders to where you extracted the *DENSEanalysis*
+software and run the `DENSEsetup` script to finish the installation of the
+software.
+
+    cd('path/to/DENSEanalysis') DENSEsetup
+
+#### Running *DENSEanalysis* Programs
+
+*DENSEanalysis* is launched by simply typing the following command within the
+MATLAB command window
+
+    DENSEanalysis
+
+Similarly, *DENSEms* (Multi-Slice DENSE analysis) can be launched by using the
+following command
+
+    DENSEms
+
+#### Additional Documentation
+
+Additional information, including screenshots and examples, can be found at the
+following locations
+
 
 * [DENSEanalysis manual]({{ site.baseurl }}docs/DENSEanalysis_manual.pdf)
 * [DENSEms manual]({{ site.baseurl }}docs/DENSEms_manual.pdf)
 * [RV features manual]({{ site.baseurl }}/docs/RV_manual.pdf)
 
-## Contributors
 
-* [Andrew Gilliam](http://www.adgilliam.com/)
-* [Jonathan Suever](https://github.com/suever)
+### Attribution
 
-    
+If you have used the *DENSEanalysis* software for your research or it has
+influenced your work, we ask that you cite this software and the following
+relevant publications in your work.
 
+### Contributing
+
+We welcome contributions from any members of the DENSE user community. Feel
+free to [submit a pull
+request](https://github.com/denseanalysis/denseanalysis/compare?expand=1) with
+your contributions. Please see the [CONTRIBUTING
+file](https://github.com/denseanalysis/denseanalysis/blob/master/CONTRIBUTING.md)
+for guidelines for contributing to *DENSEanalysis*.
+
+Our contributors include:
+
+* [Andrew Gilliam](http://www.adgilliam.com/) (Original Creator)
+* [Jonathan Suever](https://github.com/suever) (Maintainer)
