@@ -61,7 +61,8 @@ Launch MATLAB and change folders to where you extracted the *DENSEanalysis*
 software and run the `DENSEsetup` script to finish the installation of the
 software.
 
-    cd('path/to/DENSEanalysis') DENSEsetup
+    cd('path/to/DENSEanalysis') 
+    DENSEsetup
 
 #### Running *DENSEanalysis* Programs
 
