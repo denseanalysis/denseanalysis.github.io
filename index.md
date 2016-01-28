@@ -89,8 +89,12 @@ following locations
 ### Attribution
 
 If you have used the *DENSEanalysis* software for your research or it has
-influenced your work, we ask that you cite this software and the following
-relevant publications in your work.
+influenced your work, we ask that you include the following relevant citations
+in your work.
+
+>Spottiswoode, B. S., Zhong, X., Hess, a T., Kramer, C. M., Meintjes, E. M., Mayosi, B. M., & Epstein, F. H. (2007). Tracking myocardial motion from cine DENSE images using spatiotemporal phase unwrapping and temporal fitting. IEEE Transactions on Medical Imaging, 26(1), 15–30. http://doi.org/10.1109/TMI.2006.884215
+
+>Gilliam, A.D., Suever, J.D., and contributors (2016). DENSEanalysis. Retrieved from https://github.com/denseanalysis/denseanalysis
 
 ### Contributing
 
