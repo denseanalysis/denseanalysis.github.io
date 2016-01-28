@@ -19,18 +19,18 @@ developed on MATLAB and will allow the user to
 
 ### System Requirements
 
-In order to run properly, DENSEanalysis requires:
+In order to run properly, *DENSEanalysis* requires:
 
-* Matlab
-* Matlab Image Analysis Toolbox
-* Matlab Spline Toolbox
-* Matlab C-compiler
+* MATLAB (R2013a and newer)
+* MATLAB Image Processing Toolbox
+* MATLAB Curve Fitting Toolbox
+* MATLAB C-compiler
 
 ### Prior to Installation
 
 * If haven't compiled a mex-file in MATLAB before, run mex-setup in the MATLAB
 command window to select a compiler on your machine.
-* If you have a previous installation of DENSEanalysis, make sure to remove any existing
+* If you have a previous installation of *DENSEanalysis*, make sure to remove any existing
 search paths point to that insallation and restart MATALB (from the MATLAB File Menu, Choose
 Set Path and remove folders referring to the previous installation).
 
