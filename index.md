@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-## DENSEanalysis: Cine DENSE Processing Software ##
-
 This software was developed in MATLAB to provide a user-friendly way of
 processing **d**isplacement **en**coding with **s**timulated **e**choes (DENSE)
 image data. Currently, the software supports analysis of 2D cine DENSE images;
